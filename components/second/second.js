@@ -166,7 +166,6 @@ const styles = StyleSheet.create({
         marginHorizontal: 40,
         borderWidth: 1.5,
         borderBottomColor: "#9C2B2E",
-        // borderColor: "#9C2B2E",
         textAlign: "center",
         borderRadius: 5,
         marginLeft: 40,

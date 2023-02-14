@@ -83,7 +83,6 @@ const styles = StyleSheet.create({
     },
     point: {
         color: "#2C2540",
-        // fontWeight: '500',
         fontSize: 16,
         top: 83,
         flexDirection: "row",
