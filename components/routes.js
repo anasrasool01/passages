@@ -7,6 +7,7 @@ import Details from './third/third';
 import Card_Details from './forth/forth';
 import Sign_In from './fifth/fifth';
 import Gallery_view from './sixth/sixth';
+import Profile from './seventh/seventh';
 // import AppIntro from './fifth/modalView';
 
 const Stack = createNativeStackNavigator();
@@ -29,6 +30,9 @@ function MyTabs() {
         <Stack.Screen name="Sign_In" component={Sign_In} />
 
         <Stack.Screen name="Gallery_view" component={Gallery_view} />
+
+        <Stack.Screen name="Profile" component={Profile} />
+
 
 
         {/* <Stack.Screen name="AppIntro" component={AppIntro} /> */}

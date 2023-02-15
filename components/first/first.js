@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
   first: {
     flex: 1,
     backgroundColor: '#2C2540',
+    height : 700,
   },
   img: {
     alignSelf: "center",
