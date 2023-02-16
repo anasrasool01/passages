@@ -1,23 +1,25 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View, Image, TextInput, ScrollView, TouchableOpacity, Pressable } from 'react-native'
 
-const Profile = ({ navigation }) => {
+const Gallery = ({ navigation }) => {
     return (
         <ScrollView>
             <View style={styles.Container}>
-                <View style={styles.cleancon}></View>
+                <View style={styles.cleancon}>
+                <Image style={styles.backgroundLogo} source={require('../Images/backEight.png')} />
+                </View>
 
                 <View style={styles.InnerContainer}>
-                    <Image style={styles.backgroundLogo} source={require('../Images/dptwo.png')} />
+                    <Image style={styles.backgroundLogo} source={require('../Images/dpEight.png')} />
                     <TouchableOpacity>
                         <Image style={styles.backlogo} source={require('../Images/backArrow.png')} />
                     </TouchableOpacity>
 
-                    <TouchableOpacity onPress={() =>navigation.navigate('Gallery')}>
+                    <TouchableOpacity>
                         <Image style={styles.editlogo} source={require('../Images/edit.png')} />
                     </TouchableOpacity>
 
-                    <Text style={styles.headingtop} >Jon Doe</Text>
+                    <Text style={styles.headingtop}>Jon Doe</Text>
                     <Text style={styles.para}>jondoe@gmail.com</Text>
                     <Text style={styles.parao}>Personal Profie bio Section</Text>
 
@@ -29,7 +31,23 @@ const Profile = ({ navigation }) => {
                         <View style={styles.boxtwo}>
                             <View style={styles.InputModal}>
                                 <View style={styles.ico}>
-                                    <Image style={styles.IconModal} source={require('../Images/dpthree.png')} />
+                                    <Image style={styles.IconModal} source={require('../Images/profileoneeight.png')} />
+                                </View>
+                                <View style={styles.placeicon}>
+                                    <TextInput style={styles.TextInputModal}
+                                        placeholder="Jane Doe" />
+                                    <TouchableOpacity>
+                                        <Image style={styles.logoplus} source={require('../Images/del.png')} />
+                                    </TouchableOpacity>
+                                </View>
+                            </View>
+                        </View>
+
+
+                        <View style={styles.boxtwo}>
+                            <View style={styles.InputModal}>
+                                <View style={styles.ico}>
+                                    <Image style={styles.IconModal} source={require('../Images/profileoneeight.png')} />
                                 </View>
                                 <View style={styles.placeicon}>
                                     <TextInput style={styles.TextInputModal}
@@ -45,23 +63,7 @@ const Profile = ({ navigation }) => {
                         <View style={styles.boxtwo}>
                             <View style={styles.InputModal}>
                                 <View style={styles.ico}>
-                                    <Image style={styles.IconModal} source={require('../Images/dpthree.png')} />
-                                </View>
-                                <View style={styles.placeicon}>
-                                    <TextInput style={styles.TextInputModal}
-                                        placeholder="Full Name" />
-                                    <TouchableOpacity>
-                                        <Image style={styles.logoplus} source={require('../Images/del.png')} />
-                                    </TouchableOpacity>
-                                </View>
-                            </View>
-                        </View>
-
-
-                        <View style={styles.boxtwo}>
-                            <View style={styles.InputModal}>
-                                <View style={styles.ico}>
-                                    <Image style={styles.IconModal} source={require('../Images/dpthree.png')} />
+                                    <Image style={styles.IconModal} source={require('../Images/profileoneeight.png')} />
                                 </View>
                                 <View style={styles.placeicon}>
                                     <TextInput style={styles.TextInputModal}
@@ -81,7 +83,20 @@ const Profile = ({ navigation }) => {
 
                         <View style={styles.two}>
                             <View style={styles.contentall}>
-                                <Image style={styles.IconModaltwo} source={require('../Images/dpthree.png')} />
+                                <Image style={styles.IconModaltwo} source={require('../Images/profiletwoeight.png')} />
+                                <View style={styles.content}>
+                                    <Text style={styles.title} >Summer Vacation</Text>
+                                    <Text style={styles.titlepara} >Go to Project</Text>
+                                </View>
+                                <TouchableOpacity>
+                                    <Image style={styles.logonext} source={require('../Images/frontArrow.png')} />
+                                </TouchableOpacity>
+                            </View>
+                        </View>
+
+                        <View style={styles.two}>
+                            <View style={styles.contentall}>
+                                <Image style={styles.IconModaltwo} source={require('../Images/profiletwoeight.png')} />
                                 <View style={styles.content}>
                                     <Text style={styles.title} >Title</Text>
                                     <Text style={styles.titlepara} >Go to Project</Text>
@@ -94,20 +109,7 @@ const Profile = ({ navigation }) => {
 
                         <View style={styles.two}>
                             <View style={styles.contentall}>
-                                <Image style={styles.IconModaltwo} source={require('../Images/dpthree.png')} />
-                                <View style={styles.content}>
-                                    <Text style={styles.title} >Title</Text>
-                                    <Text style={styles.titlepara} >Go to Project</Text>
-                                </View>
-                                <TouchableOpacity>
-                                    <Image style={styles.logonext} source={require('../Images/frontArrow.png')} />
-                                </TouchableOpacity>
-                            </View>
-                        </View>
-
-                        <View style={styles.two}>
-                            <View style={styles.contentall}>
-                                <Image style={styles.IconModaltwo} source={require('../Images/dpthree.png')} />
+                                <Image style={styles.IconModaltwo} source={require('../Images/profiletwoeight.png')} />
                                 <View style={styles.content}>
                                     <Text style={styles.title} >Title</Text>
                                     <Text style={styles.titlepara} >Go to Project</Text>
@@ -144,7 +146,7 @@ const Profile = ({ navigation }) => {
     )
 }
 
-export default Profile
+export default Gallery
 
 const styles = StyleSheet.create({
     Container: {
@@ -312,7 +314,7 @@ const styles = StyleSheet.create({
         lineHeight: 20,
     },
     logonext: {
-        marginLeft: 10,
+        marginLeft: -20,
         top: 60,
     },
 
