@@ -82,7 +82,7 @@ const Create_Your_Account = ({ navigation }) => {
                     onPress={() => setChecked(!checked)}
                 >
                     <View style={[styles.checkbox, checked ? styles.checked : null]} />
-                    <Text style={styles.checkboxText}>Agree to</Text>
+                    <Text style={styles.checkboxText}>Agree to</Text>         
                     <TouchableOpacity onPress={openURL}>
                         <Text style={styles.checkboxTextbold}>Terms And Conditions</Text>
                     </TouchableOpacity>
@@ -166,7 +166,6 @@ const styles = StyleSheet.create({
         marginHorizontal: 40,
         borderWidth: 1.5,
         borderBottomColor: "#9C2B2E",
-        // borderColor: "#9C2B2E",
         textAlign: "center",
         borderRadius: 5,
         marginLeft: 40,
@@ -215,15 +214,14 @@ const styles = StyleSheet.create({
         height: 50,
     },
     logogoogle: {
-        marginBottom: 17,
+        // marginBottom: 0,
         marginRight: 19,
-        width: 35,
-        height: 35,
+        // width: 35,
+        // height: 35,
     },
     lastText: {
         justifyContent: "center",
         flexDirection: "row",
-
     },
 
 })
