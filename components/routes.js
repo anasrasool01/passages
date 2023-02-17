@@ -9,6 +9,7 @@ import Sign_In from './fifth/fifth';
 import Gallery_view from './sixth/sixth';
 import Profile from './seventh/seventh';
 import Gallery from './Eighth/eight';
+import DetailScreen from './ninth/ninth';
 // import AppIntro from './fifth/modalView';
 
 const Stack = createNativeStackNavigator();
@@ -16,9 +17,12 @@ function MyTabs() {
   return (
     <NavigationContainer>
 
-      <Stack.Navigator initialRouteName="Passages" screenOptions={{
-        animation: 'fade_from_bottom'
-      }}>
+      <Stack.Navigator 
+      // initialRouteName="Passages" screenOptions={{
+        // animation: 'fade_from_bottom'
+        screenOptions = {{headerShown : false}}
+      // }}
+      >
 
         <Stack.Screen name="Passages" component={Passages} />
 
@@ -36,8 +40,7 @@ function MyTabs() {
 
         <Stack.Screen name="Gallery" component={Gallery} />
 
-
-        {/* <Stack.Screen name="AppIntro" component={AppIntro} /> */}
+        <Stack.Screen name="DetailScreen" component={DetailScreen} />
 
       </Stack.Navigator>
 

@@ -15,7 +15,7 @@ const Gallery = ({ navigation }) => {
                         <Image style={styles.backlogo} source={require('../Images/backArrow.png')} />
                     </TouchableOpacity>
 
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() =>navigation.navigate('DetailScreen')}>
                         <Image style={styles.editlogo} source={require('../Images/edit.png')} />
                     </TouchableOpacity>
 
