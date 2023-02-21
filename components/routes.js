@@ -83,16 +83,7 @@ function MyTabs() {
 
         <Stack.Screen name="Privacy_And_Security" component={PrivacyAndSecurity} />
 
-
-
-
-
         <Stack.Screen name="Settings" component={Settings} />
-
-
-
-
-
 
       </Stack.Navigator>
 
