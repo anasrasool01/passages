@@ -5,21 +5,21 @@ const Settings = ({ navigation }) => {
   return (
     <ScrollView>
       <TouchableOpacity >
-<<<<<<< HEAD
+
         <Image style={styles.IconBack} source={require('../Images/backArrow.png')} />
       </TouchableOpacity>
       <View style={styles.first}>
         <Text style={styles.heading}>Settings</Text>
 
         <TouchableOpacity>
-=======
+
                     <Image style={styles.IconBack} source={require('../Images/backArrow.png')} />
                 </TouchableOpacity>
       <View style={styles.first}>
         <Text style={styles.heading}>Settings</Text>
 
         <TouchableOpacity onPress={() =>navigation.navigate('ManagePayments')}>
->>>>>>> staging
+
           <View style={styles.btn}>
             <Text style={styles.Invite}>Manage Subscription</Text>
             <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
@@ -47,12 +47,9 @@ const Settings = ({ navigation }) => {
             <Text style={styles.Invite2}>Change Password</Text>
           </View>
         </TouchableOpacity>
-
-<<<<<<< HEAD
         <TouchableOpacity onPress={() => navigation.navigate('Privacy_And_Security')}>
-=======
-        <TouchableOpacity >
->>>>>>> staging
+
+
           <View style={styles.btn3}>
             <Image style={styles.getstarted2} source={require('../Images/message.png')} />
             <Text style={styles.Invite3}>Sign Out</Text>
@@ -79,24 +76,16 @@ const styles = StyleSheet.create({
   IconBack: {
     marginLeft: 20,
     marginTop: 40,
-<<<<<<< HEAD
   },
   heading: {
     marginTop: -20,
-=======
-},
-  heading: {
-    marginTop : -20,
->>>>>>> staging
+
     textAlign: "center",
     fontWeight: 'bold',
     fontSize: 26,
     color: "#9C2B2E",
-<<<<<<< HEAD
     marginBottom: 40,
-=======
-    marginBottom : 40,
->>>>>>> staging
+
   },
 
   getstarted: {

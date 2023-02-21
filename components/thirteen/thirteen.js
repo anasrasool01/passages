@@ -3,10 +3,7 @@ import React, { useState } from 'react';
 
 const ManagePayments = ({ navigation }) => {
   const [showModal, setShowModal] = useState(false);
-<<<<<<< HEAD
-=======
-  const [checked, setChecked] = useState(false);
->>>>>>> staging
+
   return (
     <ScrollView>
 
@@ -40,11 +37,8 @@ const ManagePayments = ({ navigation }) => {
 
 
             <View style={styles.btn}>
-<<<<<<< HEAD
               <TouchableOpacity onPress={() =>navigation.navigate('Privacy_And_Security')} style={styles.btn3}>
-=======
-              <TouchableOpacity style={styles.btn3}>
->>>>>>> staging
+
                 <Text style={styles.Invite3}>Add</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.btn4}>

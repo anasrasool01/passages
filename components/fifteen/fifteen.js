@@ -1,18 +1,16 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, TextInput } from 'react-native'
 import React from 'react';
 
-<<<<<<< HEAD
+
 const PrivacyPolicy = ({ navigation }) => {
-=======
-const PrivacyAndSecurity = ({ navigation }) => {
->>>>>>> staging
+
   return (
     <ScrollView>
       <TouchableOpacity >
         <Image style={styles.IconBack} source={require('../Images/backArrow.png')} />
       </TouchableOpacity>
       <View style={styles.first}>
-<<<<<<< HEAD
+
         <TouchableOpacity onPress={() => navigation.navigate('Privacy_And_Security')}>
         <Text style={styles.heading}>Privacy Policy</Text>
         </TouchableOpacity>
@@ -24,7 +22,7 @@ const PrivacyAndSecurity = ({ navigation }) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi ad pariatur. Enim provident cupiditate possimus voluptatem cum magni eum, voluptates dignissimos sit suscipit voluptas delectus. Repudiandae fuga doloribus et.
           </Text>
         </View>
-=======
+
         <Text style={styles.heading}>Privacy And Security</Text>
 
         <TouchableOpacity onPress={() => navigation.navigate('ManagePayments')}>
@@ -71,16 +69,12 @@ const PrivacyAndSecurity = ({ navigation }) => {
           </View>
         </TouchableOpacity>
 
->>>>>>> staging
       </View>
     </ScrollView>
   )
 }
-<<<<<<< HEAD
 export default PrivacyPolicy
-=======
-export default PrivacyAndSecurity
->>>>>>> staging
+
 const styles = StyleSheet.create({
   first: {
     flex: 1,
@@ -97,7 +91,7 @@ const styles = StyleSheet.create({
     color: "#9C2B2E",
     marginBottom: 40,
   },
-<<<<<<< HEAD
+
   para: {
     marginHorizontal: 26,
   },
@@ -105,7 +99,7 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     fontSize: 20,
     color: "#9C2B2E"
-=======
+
 
   getstarted: {
     alignSelf: "center",
@@ -131,6 +125,5 @@ const styles = StyleSheet.create({
     fontSize: 18,
     width : 270,
     fontWeight: '700',
->>>>>>> staging
   },
 })
