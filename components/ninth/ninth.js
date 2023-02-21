@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, ScrollView,
 import DropDownPicker from 'react-native-dropdown-picker';
 import React, { useState } from 'react'
 
+
 const DetailScreen = ({ navigation }) => {
     const [showModal, setShowModal] = useState(false);
     const [selectedName, setSelectedName] = useState(null);
@@ -106,6 +107,7 @@ const DetailScreen = ({ navigation }) => {
 
                     <View style={{ borderWidth: 2, borderRadius: 10, borderStyle: 'dotted', width: 153, height: 146, marginLeft: 20, marginTop: 10 }}>
                     <Image style={{ marginTop: 60, alignSelf: 'center' }} source={require('../Images/messagenine.png')} />
+
                     </View>
                     <View style={{ borderWidth: 2, borderRadius: 10, borderStyle: 'dotted', width: 153, height: 146, marginRight: 30, marginTop: 10 }}>
                         <Image style={{ marginTop: 60, alignSelf: 'center' }} source={require('../Images/messagenine.png')} />
@@ -113,6 +115,7 @@ const DetailScreen = ({ navigation }) => {
                 </View>
                 <View style={{ flexDirection: 'row', margin: 10 }}>
                     <Text style={styles.AddText}>Add multiple Images</Text>
+
                 </View>
                 <Text style={styles.StoryText}> Add Videos</Text>
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
@@ -125,9 +128,11 @@ const DetailScreen = ({ navigation }) => {
                 </View>
                 <View style={styles.input} >
                     <Text style={styles.AddText}>Add multiple Videos</Text>
+
                 </View>
                 <Text style={styles.StoryText}>Add Text</Text>
                 <View style={{ flexDirection: 'row' }}>
+
                     <TextInput placeholder='Write..'
                         numberOfLines={2}
                         multiline={true}
@@ -190,9 +195,11 @@ const styles = StyleSheet.create({
     IconBack: {
         marginLeft: 20,
         marginTop: 20,
+
     },
     img: {
         alignSelf: 'center',
+
         marginBottom: 20
     },
     HeadersText: {
@@ -317,6 +324,7 @@ const styles = StyleSheet.create({
         width: 314,
         height: 335,
     },
+
     LeaveText: {
         color: '#FDFDFE',
         padding: 30,

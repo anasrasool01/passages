@@ -1,13 +1,16 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, TextInput } from 'react-native'
 import React from 'react';
 
+
 const PrivacyPolicy = ({ navigation }) => {
+
   return (
     <ScrollView>
       <TouchableOpacity >
         <Image style={styles.IconBack} source={require('../Images/backArrow.png')} />
       </TouchableOpacity>
       <View style={styles.first}>
+
         <TouchableOpacity onPress={() => navigation.navigate('Privacy_And_Security')}>
         <Text style={styles.heading}>Privacy Policy</Text>
         </TouchableOpacity>
@@ -19,11 +22,59 @@ const PrivacyPolicy = ({ navigation }) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi ad pariatur. Enim provident cupiditate possimus voluptatem cum magni eum, voluptates dignissimos sit suscipit voluptas delectus. Repudiandae fuga doloribus et.
           </Text>
         </View>
+
+        <Text style={styles.heading}>Privacy And Security</Text>
+
+        <TouchableOpacity onPress={() => navigation.navigate('ManagePayments')}>
+          <View style={styles.btn}>
+            <Text style={styles.Invite}>Privacy Policy</Text>
+            <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
+          </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity >
+          <View style={styles.btn}>
+            <Text style={styles.Invite}>Terms and Conditions</Text>
+            <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
+          </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity >
+          <View style={styles.btn}>
+            <Text style={styles.Invite}>What is a Two-Factor Authentication and how can i turn this On and Off ?</Text>
+            <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
+          </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity >
+          <View style={styles.btn}>
+            <Text style={styles.Invite}>Is my Profile secure and private?Can I trust passages with my data?</Text>
+            <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
+          </View>
+        </TouchableOpacity>
+
+
+        <TouchableOpacity >
+          <View style={styles.btn}>
+            <Text style={styles.Invite}>IS your site moderated?</Text>
+            <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
+          </View>
+        </TouchableOpacity>
+
+
+        <TouchableOpacity >
+          <View style={styles.btn}>
+            <Text style={styles.Invite}>Data management and content storage</Text>
+            <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
+          </View>
+        </TouchableOpacity>
+
       </View>
     </ScrollView>
   )
 }
 export default PrivacyPolicy
+
 const styles = StyleSheet.create({
   first: {
     flex: 1,
@@ -40,6 +91,7 @@ const styles = StyleSheet.create({
     color: "#9C2B2E",
     marginBottom: 40,
   },
+
   para: {
     marginHorizontal: 26,
   },
@@ -47,5 +99,31 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     fontSize: 20,
     color: "#9C2B2E"
+
+
+  getstarted: {
+    alignSelf: "center",
+    marginRight: 20,
+  },
+  btn: {
+    backgroundColor: '#FFFFFF',
+    width: 342,
+    alignSelf: 'center',
+    borderRadius: 12,
+    marginBottom: 10,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginVertical: 20,
+  },
+ 
+  Invite: {
+    // textAlign: 'center',
+    marginTop: 13,
+    marginBottom : 13,
+    marginLeft: 20,
+    color: '#9C2B2E',
+    fontSize: 18,
+    width : 270,
+    fontWeight: '700',
   },
 })

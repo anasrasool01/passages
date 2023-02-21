@@ -11,13 +11,16 @@ const PrivacyAndSecurity = ({ navigation }) => {
         <Text style={styles.heading}>Privacy And Security</Text>
 
         <TouchableOpacity onPress={() => navigation.navigate('Privacy_Policy')}>
+
           <View style={styles.btn}>
             <Text style={styles.Invite}>Privacy Policy</Text>
             <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
           </View>
         </TouchableOpacity>
 
+
         <TouchableOpacity onPress={() => navigation.navigate('Terms_and_Conditions')} >
+
           <View style={styles.btn}>
             <Text style={styles.Invite}>Terms and Conditions</Text>
             <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
@@ -25,13 +28,16 @@ const PrivacyAndSecurity = ({ navigation }) => {
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => navigation.navigate('Manage_Subscriptions')} >
+
           <View style={styles.btn}>
             <Text style={styles.Invite}>What is a Two-Factor Authentication and how can i turn this On and Off ?</Text>
             <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
           </View>
         </TouchableOpacity>
 
+
         <TouchableOpacity onPress={() => navigation.navigate('Save_20')} >
+
           <View style={styles.btn}>
             <Text style={styles.Invite}>Is my Profile secure and private?Can I trust passages with my data?</Text>
             <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
@@ -39,14 +45,14 @@ const PrivacyAndSecurity = ({ navigation }) => {
         </TouchableOpacity>
 
 
+
         <TouchableOpacity onPress={() => navigation.navigate('Save_15')}>
+
           <View style={styles.btn}>
             <Text style={styles.Invite}>IS your site moderated?</Text>
             <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
           </View>
         </TouchableOpacity>
-
-
         <TouchableOpacity onPress={() => navigation.navigate('Settings')} >
           <View style={styles.btn}>
             <Text style={styles.Invite}>Data management and content storage</Text>
