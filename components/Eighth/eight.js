@@ -6,7 +6,7 @@ const Gallery = ({ navigation }) => {
         <ScrollView>
             <View style={styles.Container}>
                 <View style={styles.cleancon}>
-                <Image style={styles.backgroundLogo} source={require('../Images/backEight.png')} />
+                <Image style={[styles.backgroundLogo, {width : 430}]} source={require('../Images/backEight.png')} />
                 </View>
 
                 <View style={styles.InnerContainer}>
@@ -161,8 +161,9 @@ const styles = StyleSheet.create({
         bottom: 30,
     },
     editlogo: {
-        left: 360,
-        bottom: 50,
+        alignSelf :"flex-end",
+        marginTop: -50,
+        marginRight : 20,
     },
     logoplus: {
         marginLeft: 95,
@@ -178,34 +179,14 @@ const styles = StyleSheet.create({
         fontWeight: '700',
         fontSize: 28,
         color: '#9C2B2E',
-        // marginHorizontal: 25,
         textAlign: "center",
-        bottom: 30,
     },
     boxtwo: {
         alignItems: "center",
         borderRadius: 15,
-        // backgroundColor: 'skyblue',
-        // elevation: 1,
-        // width : 300,
-        // height : 120,
-        // shadowColor : "grey",
-        // shadowColor : #rgba(44, 37, 64, 0.25),
         borderWidth: 1,
         borderColor: '#FFFFFF',
         marginHorizontal: 30,
-
-
-
-        // shadowColor: "#000",
-        // shadowOffset: {
-        //     width: 0,
-        //     height: 8,
-        // },
-        // shadowOpacity: 0.46,
-        // shadowRadius: 11.14,
-
-        // elevation: 110,
     },
     ico: {
 
@@ -213,10 +194,6 @@ const styles = StyleSheet.create({
     two: {
         alignItems: "center",
         borderRadius: 15,
-        // backgroundColor: 'skyblue',
-        // elevation: 110,
-        // shadowColor : "grey",
-        // shadowColor : #rgba(44, 37, 64, 0.25),
         borderWidth: 1,
         width: 310,
         borderColor: '#FFFFFF',
@@ -225,14 +202,12 @@ const styles = StyleSheet.create({
     para: {
         textAlign: "center",
         fontWeight: 'normal',
-        bottom: 25,
         fontSize: 16,
         color: '#2C2540',
     },
     parao: {
         textAlign: "center",
         fontWeight: 'bold',
-        bottom: 15,
         fontSize: 16,
         color: '#2C2540',
     },
@@ -241,30 +216,16 @@ const styles = StyleSheet.create({
         marginTop: -40,
     },
     InputModal: {
-        // flexDirection: 'row',
-        // borderBottomWidth: 1,
-        // borderColor: '#FFFFFF',
         flexDirection: 'row',
         margin: 10,
-        // elevation: 110,
     },
-    // placeicon: {
 
-    // },
     IconModal: {
-        // right: 50,
         marginHorizontal: 10,
-        // marginTop: 10,
-        // fontSize: 30,
-        // fontWeight: '500',
     },
     TextInputModal: {
-        // color: '#FFFFFF',
-        // color: 'white',
-        // placeholder: 'white',
         fontSize: 16,
         borderBottomWidth: 1,
-        // borderColor: '#FFFFFF',
         width: 120,
 
     },
@@ -273,7 +234,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 28,
         color: "#9C2B2E",
-        // marginHorizontal : 100,
         marginVertical: 20,
     },
     collab: {

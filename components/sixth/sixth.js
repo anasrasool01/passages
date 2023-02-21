@@ -113,10 +113,6 @@ const styles = StyleSheet.create({
         fontWeight: '700',
         fontSize: 28,
         color: '#9C2B2E',
-        // textAlign : "left"
-        // alignItems:"left"
-        // alignContent : "left"
-        // alignSelf : "left"
     },
 
     boxtwo: {
@@ -126,8 +122,6 @@ const styles = StyleSheet.create({
         alignItems: "center",
         borderRadius: 15,
         backgroundColor: 'skyblue',
-        // shadowColor : "grey",
-        // shadowColor : #rgba(44, 37, 64, 0.25),
         borderWidth: 1,
         borderColor: '#FFFFFF',
         marginTop: 30,

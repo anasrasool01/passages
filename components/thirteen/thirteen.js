@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 
 const ManagePayments = ({ navigation }) => {
   const [showModal, setShowModal] = useState(false);
-  const [checked, setChecked] = useState(false);
   return (
     <ScrollView>
 
@@ -37,7 +36,7 @@ const ManagePayments = ({ navigation }) => {
 
 
             <View style={styles.btn}>
-              <TouchableOpacity style={styles.btn3}>
+              <TouchableOpacity onPress={() =>navigation.navigate('Privacy_And_Security')} style={styles.btn3}>
                 <Text style={styles.Invite3}>Add</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.btn4}>

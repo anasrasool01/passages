@@ -5,12 +5,12 @@ const Settings = ({ navigation }) => {
   return (
     <ScrollView>
       <TouchableOpacity >
-                    <Image style={styles.IconBack} source={require('../Images/backArrow.png')} />
-                </TouchableOpacity>
+        <Image style={styles.IconBack} source={require('../Images/backArrow.png')} />
+      </TouchableOpacity>
       <View style={styles.first}>
         <Text style={styles.heading}>Settings</Text>
 
-        <TouchableOpacity onPress={() =>navigation.navigate('ManagePayments')}>
+        <TouchableOpacity>
           <View style={styles.btn}>
             <Text style={styles.Invite}>Manage Subscription</Text>
             <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
@@ -39,7 +39,7 @@ const Settings = ({ navigation }) => {
           </View>
         </TouchableOpacity>
 
-        <TouchableOpacity >
+        <TouchableOpacity onPress={() => navigation.navigate('Privacy_And_Security')}>
           <View style={styles.btn3}>
             <Image style={styles.getstarted2} source={require('../Images/message.png')} />
             <Text style={styles.Invite3}>Sign Out</Text>
@@ -66,14 +66,14 @@ const styles = StyleSheet.create({
   IconBack: {
     marginLeft: 20,
     marginTop: 40,
-},
+  },
   heading: {
-    marginTop : -20,
+    marginTop: -20,
     textAlign: "center",
     fontWeight: 'bold',
     fontSize: 26,
     color: "#9C2B2E",
-    marginBottom : 40,
+    marginBottom: 40,
   },
 
   getstarted: {

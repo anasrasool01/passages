@@ -43,6 +43,7 @@ export default Details
 const styles = StyleSheet.create({
     first: {
         flex: 1,
+        height : 1000,
         backgroundColor: '#2C2540',
     },
     img: {
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
         top: 58,
     },
     background: {
-        height: 194,
+        height: 220,
         width: 420,
         top: 280,
         borderRadius: 0,

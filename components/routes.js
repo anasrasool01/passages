@@ -15,7 +15,11 @@ import Content from './eleven/eleven';
 import Settings from './twelve/twelve';
 import ManagePayments from './thirteen/thirteen';
 import PrivacyAndSecurity from './fourteen/fourteen';
-// import AppIntro from './fifth/modalView';
+import PrivacyPolicy from './fifteen/fifteen';
+import TermsandConditions from './sixteen/sixteen';
+import ManageSubscriptions from './seventeen/seventeen';
+import Save20 from './eighteen/eighteen';
+import Save15 from './nineteen/nineteen';
 
 const Stack = createNativeStackNavigator();
 function MyTabs() {
@@ -29,7 +33,7 @@ function MyTabs() {
       // }}
       >
 
-        {/* <Stack.Screen name="Passages" component={Passages} />
+        <Stack.Screen name="Passages" component={Passages} />
 
         <Stack.Screen name="Create_Your_Account" component={Create_Your_Account} />
 
@@ -45,21 +49,29 @@ function MyTabs() {
 
         <Stack.Screen name="Gallery" component={Gallery} />
 
-        <Stack.Screen name="DetailScreen" component={DetailScreen} />*/}
+        <Stack.Screen name="DetailScreen" component={DetailScreen} />
 
-        {/* <Stack.Screen name="BirthdayScreen" component={BirthdayScreen} /> */}
+        <Stack.Screen name="BirthdayScreen" component={BirthdayScreen} />
 
-        {/* <Stack.Screen name="My Content" component={Content} />  */}
+        <Stack.Screen name="My_Content" component={Content} />
 
-        {/* <Stack.Screen name="Manage Payments" component={ManagePayments} />  */}
+        <Stack.Screen name="Manage_Payments" component={ManagePayments} />
 
-{/* <Stack.Screen name="Privacy And Security" component={PrivacyAndSecurity} />  */}
+        <Stack.Screen name="Privacy_And_Security" component={PrivacyAndSecurity} />
 
-{/* <Stack.Screen name="Privacy And Security" component={PrivacyAndSecurity} />  */}
+        <Stack.Screen name="Privacy_Policy" component={PrivacyPolicy} />
+
+        <Stack.Screen name="Terms_and_Conditions" component={TermsandConditions} />
+
+        <Stack.Screen name="Manage_Subscriptions" component={ManageSubscriptions} />
+
+        <Stack.Screen name="Save_20" component={Save20} />
+
+        <Stack.Screen name="Save_15" component={Save15} />
+
+        <Stack.Screen name="Settings" component={Settings} />
 
 
-
-        {/* <Stack.Screen name="Settings" component={Settings} /> */}
 
 
 

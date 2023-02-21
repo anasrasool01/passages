@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, TextInput } from 'react-native'
 import React from 'react';
 
-const PrivacyPolicy = ({ navigation }) => {
+const TermsandConditions = ({ navigation }) => {
   return (
     <ScrollView>
-      <TouchableOpacity >
+      <TouchableOpacity>
         <Image style={styles.IconBack} source={require('../Images/backArrow.png')} />
       </TouchableOpacity>
       <View style={styles.first}>
-        <TouchableOpacity onPress={() => navigation.navigate('Privacy_And_Security')}>
-        <Text style={styles.heading}>Privacy Policy</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('Privacy_And_Security')} >
+        <Text style={styles.heading}>Terms and Conditions</Text>
         </TouchableOpacity>
         <View style={styles.para}>
           <Text style={styles.para1}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi ad pariatur. Enim provident cupiditate possimus voluptatem cum magni eum, voluptates dignissimos sit suscipit voluptas delectus. Repudiandae fuga doloribus et
@@ -23,7 +23,7 @@ const PrivacyPolicy = ({ navigation }) => {
     </ScrollView>
   )
 }
-export default PrivacyPolicy
+export default TermsandConditions
 const styles = StyleSheet.create({
   first: {
     flex: 1,
