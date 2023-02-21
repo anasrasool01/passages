@@ -10,11 +10,13 @@ import Gallery_view from './sixth/sixth';
 import Profile from './seventh/seventh';
 import Gallery from './Eighth/eight';
 import DetailScreen from './ninth/ninth';
+
 import BirthdayScreen from './ten/ten';
 import Content from './eleven/eleven';
 import Settings from './twelve/twelve';
 import ManagePayments from './thirteen/thirteen';
 import PrivacyAndSecurity from './fourteen/fourteen';
+
 // import AppIntro from './fifth/modalView';
 
 const Stack = createNativeStackNavigator();
@@ -22,10 +24,12 @@ function MyTabs() {
   return (
     <NavigationContainer>
 
+
       <Stack.Navigator
         // initialRouteName="Passages" screenOptions={{
         // animation: 'fade_from_bottom'
         screenOptions={{ headerShown: false }}
+
       // }}
       >
 
@@ -45,6 +49,7 @@ function MyTabs() {
 
         <Stack.Screen name="Gallery" component={Gallery} />
 
+
         <Stack.Screen name="DetailScreen" component={DetailScreen} />*/}
 
         {/* <Stack.Screen name="BirthdayScreen" component={BirthdayScreen} /> */}
@@ -60,6 +65,7 @@ function MyTabs() {
 
 
         {/* <Stack.Screen name="Settings" component={Settings} /> */}
+
 
 
 
