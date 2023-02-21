@@ -2,6 +2,11 @@ import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, ScrollView,
 import DropDownPicker from 'react-native-dropdown-picker';
 import React, { useState } from 'react'
 
+<<<<<<< HEAD
+=======
+
+// const names = ["anas", "fahad", "ali"];
+>>>>>>> staging
 const DetailScreen = ({ navigation }) => {
     const [showModal, setShowModal] = useState(false);
     const [selectedName, setSelectedName] = useState(null);
@@ -106,6 +111,13 @@ const DetailScreen = ({ navigation }) => {
 
                     <View style={{ borderWidth: 2, borderRadius: 10, borderStyle: 'dotted', width: 153, height: 146, marginLeft: 20, marginTop: 10 }}>
                     <Image style={{ marginTop: 60, alignSelf: 'center' }} source={require('../Images/messagenine.png')} />
+<<<<<<< HEAD
+=======
+                        
+
+
+
+>>>>>>> staging
                     </View>
                     <View style={{ borderWidth: 2, borderRadius: 10, borderStyle: 'dotted', width: 153, height: 146, marginRight: 30, marginTop: 10 }}>
                         <Image style={{ marginTop: 60, alignSelf: 'center' }} source={require('../Images/messagenine.png')} />
@@ -113,6 +125,10 @@ const DetailScreen = ({ navigation }) => {
                 </View>
                 <View style={{ flexDirection: 'row', margin: 10 }}>
                     <Text style={styles.AddText}>Add multiple Images</Text>
+<<<<<<< HEAD
+=======
+                    {/* <Image style={{ alignSelf: 'center', marginLeft: 6, marginTop: 2 }} source={require('../Images/messagenine.png')} /> */}
+>>>>>>> staging
                 </View>
                 <Text style={styles.StoryText}> Add Videos</Text>
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
@@ -125,9 +141,18 @@ const DetailScreen = ({ navigation }) => {
                 </View>
                 <View style={styles.input} >
                     <Text style={styles.AddText}>Add multiple Videos</Text>
+<<<<<<< HEAD
                 </View>
                 <Text style={styles.StoryText}>Add Text</Text>
                 <View style={{ flexDirection: 'row' }}>
+=======
+                    {/* <Image style={{ alignSelf: 'center', marginLeft: 6, marginTop: 2 }} source={require('../Images/messagenine.png')} /> */}
+                </View>
+                {/* <Image /> */}
+                <Text style={styles.StoryText}>Add Text</Text>
+                <View style={{ flexDirection: 'row' }}>
+                    {/* <Image style={{ alignSelf: 'center', marginLeft: 6, marginTop: 2 }} source={require('../Images/messagenine.png')} /> */}
+>>>>>>> staging
                     <TextInput placeholder='Write..'
                         numberOfLines={2}
                         multiline={true}
@@ -135,6 +160,10 @@ const DetailScreen = ({ navigation }) => {
                 </View>
                 <View style={styles.UnderLine1}></View>
                 <View style={styles.input} >
+<<<<<<< HEAD
+=======
+                    {/* <Image style={{ alignSelf: 'center', marginLeft: 6, marginTop: 2 }} source={require('../Images/messagenine.png')} /> */}
+>>>>>>> staging
                     <Text style={styles.AddText}>Add more Text</Text>
                 </View>
                 <TouchableOpacity style={styles.card2}>
@@ -190,9 +219,17 @@ const styles = StyleSheet.create({
     IconBack: {
         marginLeft: 20,
         marginTop: 20,
+<<<<<<< HEAD
     },
     img: {
         alignSelf: 'center',
+=======
+        // color:"#9C2B2E" ,
+    },
+    img: {
+        alignSelf: 'center',
+        // marginTop: -30,
+>>>>>>> staging
         marginBottom: 20
     },
     HeadersText: {
@@ -317,6 +354,12 @@ const styles = StyleSheet.create({
         width: 314,
         height: 335,
     },
+<<<<<<< HEAD
+=======
+    ModalImg: {
+        // marginTop: -40
+    },
+>>>>>>> staging
     LeaveText: {
         color: '#FDFDFE',
         padding: 30,

@@ -15,11 +15,15 @@ import Content from './eleven/eleven';
 import Settings from './twelve/twelve';
 import ManagePayments from './thirteen/thirteen';
 import PrivacyAndSecurity from './fourteen/fourteen';
+<<<<<<< HEAD
 import PrivacyPolicy from './fifteen/fifteen';
 import TermsandConditions from './sixteen/sixteen';
 import ManageSubscriptions from './seventeen/seventeen';
 import Save20 from './eighteen/eighteen';
 import Save15 from './nineteen/nineteen';
+=======
+// import AppIntro from './fifth/modalView';
+>>>>>>> staging
 
 const Stack = createNativeStackNavigator();
 function MyTabs() {
@@ -33,7 +37,7 @@ function MyTabs() {
       // }}
       >
 
-        <Stack.Screen name="Passages" component={Passages} />
+        {/* <Stack.Screen name="Passages" component={Passages} />
 
         <Stack.Screen name="Create_Your_Account" component={Create_Your_Account} />
 
@@ -49,6 +53,7 @@ function MyTabs() {
 
         <Stack.Screen name="Gallery" component={Gallery} />
 
+<<<<<<< HEAD
         <Stack.Screen name="DetailScreen" component={DetailScreen} />
 
         <Stack.Screen name="BirthdayScreen" component={BirthdayScreen} />
@@ -73,6 +78,24 @@ function MyTabs() {
 
 
 
+=======
+        <Stack.Screen name="DetailScreen" component={DetailScreen} />*/}
+
+        {/* <Stack.Screen name="BirthdayScreen" component={BirthdayScreen} /> */}
+
+        {/* <Stack.Screen name="My Content" component={Content} />  */}
+
+        {/* <Stack.Screen name="Manage Payments" component={ManagePayments} />  */}
+
+{/* <Stack.Screen name="Privacy And Security" component={PrivacyAndSecurity} />  */}
+
+{/* <Stack.Screen name="Privacy And Security" component={PrivacyAndSecurity} />  */}
+
+
+
+        {/* <Stack.Screen name="Settings" component={Settings} /> */}
+
+>>>>>>> staging
 
 
 

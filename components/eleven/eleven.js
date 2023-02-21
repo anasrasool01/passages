@@ -6,7 +6,11 @@ const Content = ({ navigation }) => {
     <ScrollView>
 
       <View style={styles.first}>
+<<<<<<< HEAD
         <TouchableOpacity onPress={() =>navigation.navigate('Manage_Payments')}>
+=======
+        <TouchableOpacity onPress={() =>navigation.navigate('Content')}>
+>>>>>>> staging
         <Text style={styles.heading}>My Content</Text>
         </TouchableOpacity>
         <Text style={styles.para}>Life Story Timelines</Text>
