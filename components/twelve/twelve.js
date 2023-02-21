@@ -4,17 +4,12 @@ import React from 'react';
 const Settings = ({ navigation }) => {
   return (
     <ScrollView>
-      <TouchableOpacity >
-
-        <Image style={styles.IconBack} source={require('../Images/backArrow.png')} />
-      </TouchableOpacity>
       <View style={styles.first}>
-        <Text style={styles.heading}>Settings</Text>
-
         <TouchableOpacity>
 
                     <Image style={styles.IconBack} source={require('../Images/backArrow.png')} />
                 </TouchableOpacity>
+                </View>
       <View style={styles.first}>
         <Text style={styles.heading}>Settings</Text>
 

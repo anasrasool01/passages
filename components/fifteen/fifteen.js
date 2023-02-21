@@ -99,8 +99,7 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     fontSize: 20,
     color: "#9C2B2E"
-
-
+  },
   getstarted: {
     alignSelf: "center",
     marginRight: 20,
