@@ -4,9 +4,7 @@ import React, { useState } from 'react'
 
 
 // const names = ["anas", "fahad", "ali"];
-
-const DetailScreen = ({ navigation }) => {
-
+const DetailScreen = () => {
     const [showModal, setShowModal] = useState(false);
     const [selectedName, setSelectedName] = useState(null);
     const [open, setOpen] = useState(false);
@@ -168,10 +166,7 @@ const DetailScreen = ({ navigation }) => {
                     <TextInput style={styles.inputTitle} placeholder='Email'></TextInput>
                 </View>
                 <View style={styles.UnderLine}></View>
-
-                <TouchableOpacity onPress={() =>navigation.navigate('BirthdayScreen')} 
-                 style={[styles.btn, { marginBottom: 20 }]}>
-
+                <TouchableOpacity style={[styles.btn, { marginBottom: 20 }]}>
                     <Text style={[styles.Invite,]}>Share</Text>
                 </TouchableOpacity>
             </View>
