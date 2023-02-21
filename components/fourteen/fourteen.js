@@ -10,28 +10,44 @@ const PrivacyAndSecurity = ({ navigation }) => {
       <View style={styles.first}>
         <Text style={styles.heading}>Privacy And Security</Text>
 
+<<<<<<< HEAD
+        <TouchableOpacity onPress={() => navigation.navigate('Privacy_Policy')}>
+=======
         <TouchableOpacity onPress={() => navigation.navigate('ManagePayments')}>
+>>>>>>> staging
           <View style={styles.btn}>
             <Text style={styles.Invite}>Privacy Policy</Text>
             <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
           </View>
         </TouchableOpacity>
 
+<<<<<<< HEAD
+        <TouchableOpacity onPress={() => navigation.navigate('Terms_and_Conditions')} >
+=======
         <TouchableOpacity >
+>>>>>>> staging
           <View style={styles.btn}>
             <Text style={styles.Invite}>Terms and Conditions</Text>
             <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
           </View>
         </TouchableOpacity>
 
+<<<<<<< HEAD
+        <TouchableOpacity onPress={() => navigation.navigate('Manage_Subscriptions')} >
+=======
         <TouchableOpacity >
+>>>>>>> staging
           <View style={styles.btn}>
             <Text style={styles.Invite}>What is a Two-Factor Authentication and how can i turn this On and Off ?</Text>
             <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
           </View>
         </TouchableOpacity>
 
+<<<<<<< HEAD
+        <TouchableOpacity onPress={() => navigation.navigate('Save_20')} >
+=======
         <TouchableOpacity >
+>>>>>>> staging
           <View style={styles.btn}>
             <Text style={styles.Invite}>Is my Profile secure and private?Can I trust passages with my data?</Text>
             <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
@@ -39,7 +55,11 @@ const PrivacyAndSecurity = ({ navigation }) => {
         </TouchableOpacity>
 
 
+<<<<<<< HEAD
+        <TouchableOpacity onPress={() => navigation.navigate('Save_15')}>
+=======
         <TouchableOpacity >
+>>>>>>> staging
           <View style={styles.btn}>
             <Text style={styles.Invite}>IS your site moderated?</Text>
             <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />
@@ -47,7 +67,11 @@ const PrivacyAndSecurity = ({ navigation }) => {
         </TouchableOpacity>
 
 
+<<<<<<< HEAD
+        <TouchableOpacity onPress={() => navigation.navigate('Settings')} >
+=======
         <TouchableOpacity >
+>>>>>>> staging
           <View style={styles.btn}>
             <Text style={styles.Invite}>Data management and content storage</Text>
             <Image style={styles.getstarted} source={require('../Images/frontArrow.png')} />

@@ -76,22 +76,22 @@ const Sign_In = ({ navigation }) => {
                             <Image style={[styles.Icon, styles.PasswordIcon]} source={item.unhide} />
                         </TouchableOpacity>
                     </View>
-                    {item.input2 ==="Confirm New Password" && 
-                    
-                    <View style={styles.InputModaltwo}>
-                    <Image style={styles.IconModaltwo} source={item.imageplace2} />
+                    {item.input2 === "Confirm New Password" &&
 
-                    <TextInput style={styles.TextInputModaltwo}
-                        placeholderTextColor='white'
-                        placeholder={item.input2}
-                    />
-                    <TouchableOpacity >
-                        <Image style={[styles.Icon, styles.PasswordIcon]} source={item.unhide} />
-                    </TouchableOpacity>
+                        <View style={styles.InputModaltwo}>
+                            <Image style={styles.IconModaltwo} source={item.imageplace2} />
 
-                </View>
+                            <TextInput style={styles.TextInputModaltwo}
+                                placeholderTextColor='white'
+                                placeholder={item.input2}
+                            />
+                            <TouchableOpacity >
+                                <Image style={[styles.Icon, styles.PasswordIcon]} source={item.unhide} />
+                            </TouchableOpacity>
+
+                        </View>
                     }
-                 
+
 
                     <View style={styles.btn}>
                         <TouchableOpacity>
@@ -123,8 +123,8 @@ const Sign_In = ({ navigation }) => {
         <ScrollView style={{ flex: 1 }}>
             {/* Modal */}
             <View style={styles.centeredView}>
-                <Modal visible={modalVisible} animationType="slide" 
-                transparent={true}>
+                <Modal visible={modalVisible} animationType="slide"
+                    transparent={true}>
                     <AppIntroSlider
                         renderItem={renderItem}
                         data={slides}
@@ -181,7 +181,7 @@ const Sign_In = ({ navigation }) => {
                     </View>
                     <View style={[styles.Input, styles.InputArea]}>
                         <Image style={styles.Icon} source={require("../Images/lock.png")} />
-                        <TextInput secureTextEntry={HideShow} style={styles.TextInput} value='Anas Rasool' />
+                        <TextInput secureTextEntry={HideShow} style={styles.TextInput}  placeholder= "**********" />
                         <TouchableOpacity onPress={() => setHideShow(!HideShow)}>
                             <Image style={[styles.Icon, styles.PasswordIcon]} source={require("../Images/eye.png")} />
                             {/* <Image style={[styles.Icon, styles.PasswordIcon]} source={HideShow ? require("eye.png") : require("./eye.png")} /> */}
@@ -507,7 +507,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: '500',
     },
-    TextInputModaltwo : {
+    TextInputModaltwo: {
         color: '#FFFFFF',
         width: 240,
         marginLeft: 10,

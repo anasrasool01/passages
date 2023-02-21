@@ -93,7 +93,11 @@ const BirthdayScreen = ({ navigation }) => {
                     </View>
                 </View>
 
+<<<<<<< HEAD
+                <TouchableOpacity onPress={() =>navigation.navigate('My_Content')}
+=======
                 <TouchableOpacity onPress={() =>navigation.navigate('Content')}
+>>>>>>> staging
                  style={[styles.btn, { marginBottom: 20 }]}>
                     <Text style={[styles.Invite,]}>OK</Text>
                 </TouchableOpacity>
